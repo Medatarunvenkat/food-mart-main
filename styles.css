@@ -219,66 +219,56 @@ color: #4CAF50;
 .left-ad img {
     position: absolute;
     top: 100px;
-    right: 90px;
+    right: 50px;
     bottom: 100px;
     width: 170px;
 }
 .right-ads {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
-
 .ad-box {
-  padding: 30px;
-  border-radius: 16px;
-  position: relative;
-  min-height: 190px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    border-radius: 16px;
+    position: relative;
+    min-height: 190px;
+    width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
-
 .ad-box.green {
-  background-color: #e4f5e8;
+    background-color: #aee6bb;
 }
-
 .ad-box.peach {
-  background-color: #ffe9e3;
+    background-color: #e6b9ac;
+    padding: 50px;
+    width: 100%;
 }
-
 .ad-box h2 {
-  font-size: 22px;
-  margin: 0;
-  color: #e94e1b;
+    font-size: 24px;
+    margin: 0;
 }
-
 .ad-box .sale {
-  font-size: 14px;
-  margin: 8px 0;
-  color: #777;
+    font-size: 14px;
+    margin: 8px 0;
+    color: #777;
 }
-
 .ad-box h3 {
-  font-size: 22px;
-  margin-bottom: 12px;
-  color: #333;
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #333;
 }
-
 .ad-box a {
-  text-decoration: none;
-  color: #f4b626;
-  font-weight: bold;
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
 }
-
-.ad-box a:hover {
-  text-decoration: underline;
-}
-
 .ad-box img {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
-  width: 110px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 110px;
 }
 .carousel-dots {
     display: flex;
