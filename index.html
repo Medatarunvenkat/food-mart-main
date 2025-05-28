@@ -5,108 +5,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Food-Mart By Tarun</title>
+    <title>FoodMart - Fresh Groceries Delivered</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logoo">
-            <img src="images/logo.png" alt="">
-        </div>
-
-        <div class="search-wrapper">
-            <select class="categories">
-                <option value="">All Categories</option>
-                <option value="fruits">Fruits</option>
-                <option value="vegetables">Vegetables</option>
-                <option value="beverages">Beverages</option>
-            </select>
-
-        <div class="search-input">
-            <input type="text" placeholder="Search for more than 20000 products">
-            <i class="fa fa-search search-icon"></i>
-        </div>
-    </div>
-
-    <div class="header-right">
-            <div class="support">
-            For Support?<br>
-            <small>+980-34984089</small>
-        </div>
-
-        <div class="right-icons">
-            <div class="icon"><i class="fa-regular fa-heart"></i></div>
-            <div class="icon"><i class="fa-regular fa-user"></i></div>
-            <div class="cart-dropdown">
-                <div class="cart-toggle">
-                Your Cart <i class="fa-solid fa-chevron-down"></i>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-section">
+                <div class="logo">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span>FoodMart</span>
                 </div>
-                <div class="cart-amount">
-                    <strong>$1290.00</strong>
+            </div>
+
+            <div class="search-section">
+                <div class="search-wrapper">
+                    <select class="category-select">
+                        <option value="">All Categories</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="beverages">Beverages</option>
+                        <option value="dairy">Dairy</option>
+                        <option value="bakery">Bakery</option>
+                    </select>
+                    <div class="search-input-container">
+                        <input type="text" placeholder="Search for fresh products..." class="search-input">
+                        <button class="search-btn">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <div class="support-info">
+                    <span class="support-text">Need Help?</span>
+                    <span class="support-number">+1-800-FRESH-24</span>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="action-btn wishlist-btn">
+                        <i class="far fa-heart"></i>
+                        <span class="btn-text">Wishlist</span>
+                    </button>
+                    <button class="action-btn account-btn">
+                        <i class="far fa-user"></i>
+                        <span class="btn-text">Account</span>
+                    </button>
+                    <div class="cart-info">
+                        <button class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-text">My Cart</span>
+                            <span class="cart-count">3</span>
+                        </button>
+                        <div class="cart-total">$1,290.00</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </nav>
 
+    <div class="menu-bar">
         <div class="menu-container">
-            <div class="menu">
-                <div class="dropdown">
-                    <a href="#" class="departments-toggle">
-                    Shop By Departments <i class="fa-solid fa-chevron-down"></i>
-                    </a>
+            <div class="departments-menu">
+                <button class="departments-btn">
+                    <i class="fas fa-bars"></i>
+                    Shop by Departments
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            
+            <nav class="main-menu">
+                <a href="#" class="menu-link">Fresh Produce</a>
+                <a href="#" class="menu-link">Dairy & Eggs</a>
+                <a href="#" class="menu-link">Meat & Seafood</a>
+                <a href="#" class="menu-link">Beverages</a>
+                <a href="#" class="menu-link">Bakery</a>
+                <a href="#" class="menu-link">Organic</a>
+                <a href="#" class="menu-link sale">Sale <i class="fas fa-fire"></i></a>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-main">
+                <div class="hero-content">
+                    <span class="hero-badge">100% Natural & Fresh</span>
+                    <h1 class="hero-title">
+                        Fresh Smoothies &<br>
+                        Summer Beverages 🍹
+                    </h1>
+                    <p class="hero-description">
+                        Discover our collection of 100% organic, fresh, and healthy summer beverages. 
+                        Made with premium ingredients for your wellness journey.
+                    </p>
+                    <button class="hero-cta">
+                        Shop Fresh Now
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
-                <div class="menu-links">
-                    <a href="#">Women</a>
-                    <a href="#">Men</a>
-                    <a href="#">Kids</a>
-                    <a href="#">Accessories</a>
-                    <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
-                    <a href="#">Brand</a>
-                    <a href="#">Sale</a>
-                    <a href="#">Blog</a>
+                <div class="hero-image">
+                    <div class="product-showcase">
+                        <div class="product-circle">🥤</div>
+                    </div>
+                </div>
+                <div class="hero-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+            </div>
+
+            <div class="hero-cards">
+                <div class="promo-card green-card">
+                    <div class="card-content">
+                        <span class="discount">25% OFF</span>
+                        <div class="sale-line">——— SALE</div>
+                        <h3>Fresh Fruits &<br>Vegetables</h3>
+                        <a href="#" class="card-link">Shop Collection →</a>
+                    </div>
+                    <div class="card-icon">🥗</div>
+                </div>
+                
+                <div class="promo-card orange-card">
+                    <div class="card-content">
+                        <span class="discount">20% OFF</span>
+                        <div class="sale-line">——— SALE</div>
+                        <h3>Fresh Baked<br>Products</h3>
+                        <a href="#" class="card-link">Shop Collection →</a>
+                    </div>
+                    <div class="card-icon">🥖</div>
                 </div>
             </div>
         </div>
+    </section>
 
-
-        <section class="ads">
-            <div class="left-ad">
-                <h4>100 % Natural</h4>
-                <h1>
-                Fresh Smoothie<br />
-                & Summer Juice 🍹
-                </h1>
-                <p>
-                Dive into a world of 100% organic, fresh, and healthy summer beverages.
-                </p>
-                <button>Shop Now</button>
-                    <img src="images/product-thumb-1.png" alt="Smoothie Image" />
-                <div class="carousel-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="section-controls">
+                    <a href="#" class="view-all-link">View All Categories →</a>
+                    <div class="nav-arrows">
+                        <button class="nav-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="nav-arrow next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
                 </div>
             </div>
 
-            <div class="right-ads">
-                <div class="ad-box green">
-                    <h2>20% OFF</h2>
-                    <p class="sale">------SALE</p>
-                    <h3>Fruits & <br>
-                    Vegetables
-                    </h3>
-                    <a href="#">Shop Collection →</a>
-                    <img src="images/ad-image-1.png" alt="Fruits" />
+            <div class="categories-grid">
+                <div class="category-item">
+                    <div class="category-icon">🥬</div>
+                    <h4>Fruits & Vegetables</h4>
+                    <span class="item-count">120+ items</span>
                 </div>
-                <div class="ad-box peach">
-                    <h2>15% OFF</h2>
-                    <p class="sale">------SALE</p>
-                    <p class="sale"></p>
-                    <h3>Baked Products</h3>
-                    <a href="#">Shop Collection →</a>
-                    <img src="images/ad-image-2.png" alt="Bakery" />
+                <div class="category-item">
+                    <div class="category-icon">🍞</div>
+                    <h4>Breads & Bakery</h4>
+                    <span class="item-count">85+ items</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">🥤</div>
+                    <h4>Beverages</h4>
+                    <span class="item-count">95+ items</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">🍷</div>
+                    <h4>Wine & Spirits</h4>
+                    <span class="item-count">60+ items</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">🥩</div>
+                    <h4>Meat & Seafood</h4>
+                    <span class="item-count">70+ items</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">🌿</div>
+                    <h4>Herbs & Spices</h4>
+                    <span class="item-count">45+ items</span>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="category-section">
